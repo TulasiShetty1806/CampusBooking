@@ -2,7 +2,7 @@
 
 A web application that allows students, faculty, and administrators to efficiently manage and book campus resources such as seminar halls, labs, and classrooms. This project provides a user-friendly interface, real-time booking updates, and an admin dashboard for smooth management.
 
----
+
 
 ## **Features**
 
@@ -23,7 +23,7 @@ A web application that allows students, faculty, and administrators to efficient
 - Manage users, resources, and announcements.  
 - Monitor booking conflicts and resource availability.  
 
----
+
 
 ## **Tech Stack**
 
@@ -31,7 +31,3 @@ A web application that allows students, faculty, and administrators to efficient
 - **Backend:** Node.js, Express.js  
 - **Database:** MySQL  
 - **Hosting/Version Control:** GitHub  
-
----
-
-## **Folder Structure**
