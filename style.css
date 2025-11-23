@@ -1,0 +1,77 @@
+/* General body and fonts */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+    color: #867d7d;
+}
+
+/* Logo */
+.logo {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    display: block;
+    margin: 20px auto;
+}
+
+/* Container */
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Cards */
+.card {
+    background: rgba(0,0,0,0.6);
+    border-radius: 15px;
+    padding: 80px;       /* reduced from 20px */
+    margin: 10px 0; 
+}
+
+/* Buttons */
+button {
+    background: #ff9800;
+    border: none;
+    padding: 10px 20px;
+    color: #000;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+button:hover { background: #e68900; }
+
+/* Inputs */
+input, select {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 15px 0;
+    border-radius: 10px;
+    border: none;
+}
+
+/* Tables */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #fff;
+}
+
+/* Calendar */
+#calendar {
+    background: #fff;
+    color: #000;
+    border-radius: 15px;
+    padding: 10px;
+    margin-top: 20px;
+    height: 600px; /* essential */
+}

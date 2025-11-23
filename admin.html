@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Admin Dashboard - Campus Booking</title>
+<link rel="stylesheet" href="css/style.css">
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+<div class="container">
+    <h2>Admin Dashboard</h2>
+    <h3>Welcome, <span id="adminName"></span></h3>
+
+    <div class="card">
+        <h3>Add Resource</h3>
+        <input type="text" id="resourceName" placeholder="Resource Name">
+        <input type="text" id="resourceType" placeholder="Type">
+        <input type="text" id="resourceDesc" placeholder="Description">
+        <button onclick="addResource()">Add Resource</button>
+    </div>
+
+    <div class="card">
+        <h3>Pending Bookings</h3>
+        <table id="pendingTable">
+            <thead>
+                <tr>
+                    <th>User</th>
+                    <th>Resource</th>
+                    <th>Start</th>
+                    <th>End</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+
+    <div class="card">
+        <h3>Analytics</h3>
+        <canvas id="mostBookedChart"></canvas>
+        <canvas id="peakHoursChart" style="margin-top:20px;"></canvas>
+    </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="js/admin.js"></script>
+</body>
+</html>

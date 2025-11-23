@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dashboard - Campus Booking</title>
+<link rel="stylesheet" href="css/style.css">
+<link href="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/main.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/main.min.js"></script>
+</head>
+<body>
+<div class="container">
+    <h2>Welcome, <span id="userName"></span></h2>
+
+    <div class="card">
+        <h3>Book a Resource</h3>
+        <select id="resourceSelect"></select><br><br>
+        <input type="datetime-local" id="startTime">
+        <input type="datetime-local" id="endTime">
+        <button onclick="bookResource()">Book</button>
+    </div>
+
+    <div class="card">
+        <h3>My Bookings</h3>
+        <table id="bookingTable">
+            <thead>
+                <tr>
+                    <th>Resource</th>
+                    <th>Start</th>
+                    <th>End</th>
+                    <th>Status</th>
+                    <th>QR</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+
+    <div class="card">
+        <h3>Booking Calendar</h3>
+        <div id="calendar"></div>
+    </div>
+</div>
+<script src="js/dashboard.js"></script>
+</body>
+</html>
